@@ -1,4 +1,3 @@
-# provaweb
+# Llinàs Sansó, Jaume - Prova web
 
-Dins el mòdul Aplicacions Web del CFGM Sistemes Microinformàtics en Xarxa cream una primera Web.
-
+Fork del repositori "provaweb" d'en Joan Nigorra. A n'aquest repositori aniré fent es meus canvis i anirem provant tot a veure com surt. 
