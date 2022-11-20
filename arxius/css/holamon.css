@@ -16,7 +16,7 @@ h1 { /* Editam les propietats dels títols de la pàgina. */
 
 body { /* Editam les propietats dels estils referents al cos de la pàgina. */
     font-family: 'IBM Plex Sans', serif; /* Definim el tipus de lletra que usarem a n'aquest element. */
-    background-image: url(/arxius/imatges/terra.png); /* Definim la imatge que usarem de fons a n'aquest element. */
+    background-image: url(../imatges/terra.png); /* Definim la imatge que usarem de fons a n'aquest element. */
     background-size: cover; /* Aquest atribut és molt útil per a definir com volem veure el fons de l'element que estem editant. Per defecte, si la imatge és més petita que la pantalla es repeteix en mosaic. Jo amb el paràmetre "cover" l'hi he dit a la pàgina que el fons s'estiri o s'acursi amb la finestra.  */
 
 }
