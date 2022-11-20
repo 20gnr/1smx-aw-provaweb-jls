@@ -1,0 +1,40 @@
+/*
+    · Arxiu CSS de la pàgina "holamon.html".
+    · Jaume Llinàs Sansó
+    · jllinas15507@alumnes.iesmanacor.cat
+    · www.github.com/20gnr/provaweb-jls
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Merriweather:wght@700&display=swap'); /* Aqui importam el tipus de lletra que volem. Jo usaré Merriweather i IMB Plex Sans de Google Fonts */
+
+h1 { /* Editam les propietats dels títols de la pàgina. */
+    font-family: 'Merriweather', sans-serif; /* Definim el tipus de lletra que usarem a n'aquest element. */
+    font-size: 80px; /* Definim tamany de la font. */
+    margin: 0px; /* Definim els marges laterals que tendràn aquests títols. */
+    padding: 10px; /* Definim els marges inferiors i superiors que tendràn aquests títols. */
+} 
+
+body { /* Editam les propietats dels estils referents al cos de la pàgina. */
+    font-family: 'IBM Plex Sans', serif; /* Definim el tipus de lletra que usarem a n'aquest element. */
+    background-image: url(/arxius/imatges/terra.png); /* Definim la imatge que usarem de fons a n'aquest element. */
+    background-size: cover; /* Aquest atribut és molt útil per a definir com volem veure el fons de l'element que estem editant. Per defecte, si la imatge és més petita que la pantalla es repeteix en mosaic. Jo amb el paràmetre "cover" l'hi he dit a la pàgina que el fons s'estiri o s'acursi amb la finestra.  */
+
+}
+
+a { /* Editam les propietats dels enllaços que crearem a la nostra pàgina. */
+    color: white; /* Definim el color dels enllaços. Els posam blancs per a que concordin amb el text normal de la pàgina. */
+}
+
+.holamon { /* Aqui editam les propietats del div que conté el nostre "holamon". */
+    color: white; /* Definim el color del text. */
+
+    /* Aquesta part de codi serveix per a centrar el div tant horitzontal com verticalment. */
+
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    -webkit-transform: translate(-50%, -20%);
+    transform: translate(-50%, -20%);
+
+    /* És important posar les etiquetes webkit per a Chrome o Safari. Firefox no les usa. */
+}

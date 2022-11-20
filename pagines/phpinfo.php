@@ -1,4 +1,4 @@
-<a href="../index.html">← Tornar a l'inici</a>
+<a href="../index.html">← Tornar enrere</a>
 <?php
 phpinfo();
 ?>
