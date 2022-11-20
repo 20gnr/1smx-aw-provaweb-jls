@@ -3,40 +3,30 @@
     · Jaume Llinàs Sansó
     · jllinas15507@alumnes.iesmanacor.cat
     · www.github.com/20gnr/provaweb-jls
- -->
+-->
 
- <!DOCTYPE html> <!-- Aquesta meta-etiqueta serveix per a avisar a programes com navegadors o editors de text que el document que estam editant és un arxiu HTML. -->
+<!DOCTYPE html> <!-- Aquesta meta-etiqueta serveix per a avisar a programes com navegadors o editors de text que el document que estam editant és un arxiu HTML. -->
 
- <html lang="ca"> <!-- Aquesta etiqueta indica al navegador que ha de renderitzar llenguatge HTML i que usarem la llengua catalana per a fer-ho. -->
+<html lang="ca"> <!-- Aquesta etiqueta indica al navegador que ha de renderitzar llenguatge HTML i que usarem la llengua catalana per a fer-ho. -->
  
-     <head> <!-- Indicam que a partir d'aqui comença el "cap" de la pàgina, a on hi introduirem metadades de la pàgina com el títol o el favicon. -->
-         <meta charset="UTF-8"> <!-- Indicam el set de caràcters Unicode que usarà la nostra web. En el nostre cas usarem UTF-8. -->
-         <meta name="viewport" content="width=device-width, initial-scale=0.8"> <!-- Aquest paràmetre fa la nostra web "responsive". És a dir, que el tamany de la pàgina s'adapta a cada dispositiu amb el que accedim a ella. -->
-         <title>Calendari | Jaume Llinàs</title> <!-- Indicam el títol de la pàgina. Aquest titol serà el que veurem a les pestanyes o a la finestra del nostre navegador. -->
-         <link rel="stylesheet" href="/arxius/css/general.css"> <!-- Indicam la ruta de l'arxiu CSS a on tenim definits els estils de cada element de la pàgina. -->
-         <style>
-            .calendari {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
-         </style>
-     </head> <!-- Indicam que a partir d'aqui acaba el cap de la pàgina. -->
+    <head> <!-- Indicam que a partir d'aqui comença el "cap" de la pàgina, a on hi introduirem metadades de la pàgina com el títol o el favicon. -->
+        <meta charset="UTF-8"> <!-- Indicam el set de caràcters Unicode que usarà la nostra web. En el nostre cas usarem UTF-8. -->
+        <meta name="viewport" content="width=device-width, initial-scale=0.8"> <!-- Aquest paràmetre fa la nostra web "responsive". És a dir, que el tamany de la pàgina s'adapta a cada dispositiu amb el que accedim a ella. -->
+        <title>Calendari | Jaume Llinàs</title> <!-- Indicam el títol de la pàgina. Aquest titol serà el que veurem a les pestanyes o a la finestra del nostre navegador. -->
+        <link rel="stylesheet" href="/arxius/css/general.css"> <!-- Indicam la ruta de l'arxiu CSS a on tenim definits els estils de cada element de la pàgina. -->
+    </head> <!-- Indicam que a partir d'aqui acaba el cap de la pàgina. -->
  
 
-     <body> <!-- Indicam que a partir d'aqui comença el cos de la pàgina. -->
-        <div class="calendari">
-            <center>
-                <h1>Calendari</h1>
-                <p>A n'aquesta pàgina adjuntarem el calendari que tenim compartit amb la classe.</p>
-                <p>Per a poder veure'r-ho, necessitarem iniciar sessió <b>amb el nostre correu corporatiu</b>.</p>
-                <iframe src="https://calendar.google.com/calendar/embed?src=c_1883s9vtdk8iihslgl8pjg6v3k40g4ged5in6rb1dpgm6rri5phm2t0%40resource.calendar.google.com&ctz=Europe%2FMadrid" style="border: 0" width="600" height="400" frameborder="0" scrolling="no"></iframe><br>
-                <a href="../index.html">← Tornar enrere</a> <!-- Afegim un link per a tornar a l'índex. -->
-            </center>
-        </div>
-
-     </body> <!-- Tancam el cos de la pàgina. -->
+    <body> <!-- Indicam que a partir d'aqui comença el cos de la pàgina. -->
+        <center>
+            <h1>Calendari</h1>
+            <p>A n'aquesta pàgina adjuntarem el calendari que tenim compartit amb la classe.</p>
+            <p>Per a poder veure'r-ho, necessitarem iniciar sessió <b>amb el nostre correu corporatiu</b>.</p>
+            <!-- Després d'aquesta línia haurem d'aferrar el codi que ens acaba de donar Google Calendar.
+            Si modificam els paràmetres "width" i "height" podrem canviar el tamany del calendari. -->
+            <iframe src="https://calendar.google.com/calendar/embed?src=c_1883s9vtdk8iihslgl8pjg6v3k40g4ged5in6rb1dpgm6rri5phm2t0%40resource.calendar.google.com&ctz=Europe%2FMadrid" style="border: 0" width="600" height="400" frameborder="0" scrolling="no"></iframe><br>
+            <a href="../index.html">← Tornar enrere</a> <!-- Afegim un link per a tornar a l'índex. -->
+        </center>
+    </body> <!-- Tancam el cos de la pàgina. -->
   
- </html> <!-- A partir d'aqui el navegador deixa de renderitzar elements HTML. -->
+</html> <!-- A partir d'aqui el navegador deixa de renderitzar elements HTML. -->

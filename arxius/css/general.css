@@ -8,10 +8,38 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Merriweather:wght@700&display=swap'); /* Aqui importam el tipus de lletra que volem. Jo usaré Merriweather i IMB Plex Sans de Google Fonts */
 
 h1 {
-    font-family: 'Merriweather', sans-serif; /* Definim el tipus de lletra que usarem a n'aquest element. */
+    font-family: 'Merriweather', sans-serif; /* Definim el tipus de lletra que usaràn les capçaleres de les nostres pàgines. */
 }
 
 body {
-    font-family: 'IBM Plex Sans', serif; /* Definim el tipus de lletra que usarem a n'aquest element. */
-    background-color: #ebebeb;
+    font-family: 'IBM Plex Sans', serif; /* Definim el tipus de lletra que s'usarà al cos de les nostres pàgines. */
+    background-color: #ebebeb; /* Definim el color de fons que tindràn les nostres pàgines. */
+
+    /* Aquest codi centrarà el contingut de la nostra pàgina horitzontal i verticalment. */
+
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    /* Aquí acaba el codi per centrar. */
 }
+
+/* Aquest codi definirà l'estil dels nostres links. */
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+}
+
+/* Aquí acaba el codi dels links. */
