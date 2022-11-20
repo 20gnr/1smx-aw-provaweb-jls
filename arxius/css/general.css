@@ -1,5 +1,5 @@
 /*
-    · Arxiu CSS de la pàgina "index.html".
+    · Arxiu CSS general per a totes les pàgines.
     · Jaume Llinàs Sansó
     · jllinas15507@alumnes.iesmanacor.cat
     · www.github.com/20gnr/provaweb-jls
@@ -7,10 +7,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Merriweather:wght@700&display=swap'); /* Aqui importam el tipus de lletra que volem. Jo usaré Merriweather i IMB Plex Sans de Google Fonts */
 
-h2 {
+h1 {
     font-family: 'Merriweather', sans-serif; /* Definim el tipus de lletra que usarem a n'aquest element. */
 }
 
 body {
     font-family: 'IBM Plex Sans', serif; /* Definim el tipus de lletra que usarem a n'aquest element. */
+    background-color: #ebebeb;
 }

@@ -1,0 +1,71 @@
+<!--
+    · "rellotge.html"
+    · Jaume Llinàs Sansó
+    · jllinas15507@alumnes.iesmanacor.cat
+    · www.github.com/20gnr/provaweb-jls
+-->
+
+<!DOCTYPE html> <!-- Aquesta meta-etiqueta serveix per a avisar a programes com navegadors o editors de text que el document que estam editant és un arxiu HTML. -->
+
+<html lang="ca"> <!-- Aquesta etiqueta indica al navegador que ha de renderitzar llenguatge HTML i que usarem la llengua catalana per a fer-ho. -->
+ 
+    <head> <!-- Indicam que a partir d'aqui comença el "cap" de la pàgina, a on hi introduirem metadades de la pàgina com el títol o el favicon. -->
+        <meta charset="UTF-8"> <!-- Indicam el set de caràcters Unicode que usarà la nostra web. En el nostre cas usarem UTF-8. -->
+        <meta name="viewport" content="width=device-width, initial-scale=0.8"> <!-- Aquest paràmetre fa la nostra web "responsive". És a dir, que el tamany de la pàgina s'adapta a cada dispositiu amb el que accedim a ella. -->
+        <title>Rellotge | Jaume Llinàs</title> <!-- Indicam el títol de la pàgina. Aquest titol serà el que veurem a les pestanyes o a la finestra del nostre navegador. -->
+        <link rel="stylesheet" href="/arxius/css/general.css"> <!-- Indicam la ruta de l'arxiu CSS a on tenim definits els estils de cada element de la pàgina. -->
+         
+        <style>
+            .rellotge {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            }
+
+            #txt {
+                font-size: 40px;
+                font-weight: bolder;
+                margin-top: -15px;
+                margin-bottom: 15px;
+            }
+        </style>
+
+        <!-- A dins l'etiqueta "script" hi col·locarem el codi en JavaScript que farà funcionar el rellotge. -->
+
+        <script>
+            function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+                h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+         }
+            function checkTime(i) {
+            if (i < 10) { i = "0" + i }; 
+            return i;
+         }
+        </script>
+
+        <!-- Aqui acaba l'script del rellotge. -->
+
+    </head> <!-- Indicam que a partir d'aqui acaba el cap de la pàgina. -->
+ 
+
+    <body onload="startTime()"> <!-- Indicam que a partir d'aqui comença el cos de la pàgina. L'etiqueta "onload="startTime()"" farà que l'script del rellotge carregui quan el navegadir hagi processat el cos de la pàgina. -->
+        <div class="rellotge">
+            <h1>Quina hora és?</h1>
+            <center>
+                <p>Ara mateix són les...</p>
+                <div id="txt"></div>
+                <a href="../index.html">← Tornar enrere</a> <!-- Afegim un link per a tornar a l'índex. -->
+            </center>
+        </div>
+    </body> <!-- Tancam el cos de la pàgina. -->
+  
+</html> <!-- A partir d'aqui el navegador deixa de renderitzar elements HTML. -->
